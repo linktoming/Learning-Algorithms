@@ -1,11 +1,16 @@
-Learning-Algorithms
+MMAlgorithms
 ===================
 
-This is a central repository for learning algorithms.
+This repo is mainly for me to practice algorithms.
 
-Working in Progress: 1.8
+## Progress
 
-Skipped: 1.6, 1.7
+###Sorting
+- Insertion Sort
 
-Inspirations:
-https://github.com/EvgenyKarkan/EKAlgorithms
+## Notes to Reader
+- In real projects, adding categories to NSArray or other alike classes to provide addtional funcionalities such as sorting may be considered a voilation the single resposiblity princile in software engineering. However, in the context of practicing algorithms in Objective-C, categrories provide a convenient and concise way for the implementation such as accessing elements in a data set.
+
+##Inspirations:
+
+- [EKAlgorithms](https://github.com/EvgenyKarkan/EKAlgorithms)
