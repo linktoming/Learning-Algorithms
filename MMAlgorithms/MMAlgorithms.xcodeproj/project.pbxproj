@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		99FAA4AD1A42708B00C55898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4AC1A42708B00C55898 /* main.m */; };
-		99FAA4B51A4278CC00C55898 /* NSArray+MMSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4B41A4278CC00C55898 /* NSArray+MMSorting.m */; };
-		99FAA4B81A427D2000C55898 /* NSArray+MMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4B71A427D2000C55898 /* NSArray+MMLog.m */; };
+		99FAA4BE1A428A3000C55898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4B91A428A3000C55898 /* main.m */; };
+		99FAA4BF1A428A3000C55898 /* NSArray+MMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */; };
+		99FAA4C01A428A3000C55898 /* NSArray+MMSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,11 +26,11 @@
 
 /* Begin PBXFileReference section */
 		99FAA4A91A42708B00C55898 /* MMAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MMAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
-		99FAA4AC1A42708B00C55898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		99FAA4B31A4278CC00C55898 /* NSArray+MMSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MMSorting.h"; sourceTree = "<group>"; };
-		99FAA4B41A4278CC00C55898 /* NSArray+MMSorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMSorting.m"; sourceTree = "<group>"; };
-		99FAA4B61A427D2000C55898 /* NSArray+MMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MMLog.h"; sourceTree = "<group>"; };
-		99FAA4B71A427D2000C55898 /* NSArray+MMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMLog.m"; sourceTree = "<group>"; };
+		99FAA4B91A428A3000C55898 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
+		99FAA4BA1A428A3000C55898 /* NSArray+MMLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MMLog.h"; sourceTree = SOURCE_ROOT; };
+		99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMLog.m"; sourceTree = SOURCE_ROOT; };
+		99FAA4BC1A428A3000C55898 /* NSArray+MMSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MMSorting.h"; sourceTree = SOURCE_ROOT; };
+		99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMSorting.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +63,11 @@
 		99FAA4AB1A42708B00C55898 /* MMAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				99FAA4B31A4278CC00C55898 /* NSArray+MMSorting.h */,
-				99FAA4B41A4278CC00C55898 /* NSArray+MMSorting.m */,
-				99FAA4B61A427D2000C55898 /* NSArray+MMLog.h */,
-				99FAA4B71A427D2000C55898 /* NSArray+MMLog.m */,
-				99FAA4AC1A42708B00C55898 /* main.m */,
+				99FAA4B91A428A3000C55898 /* main.m */,
+				99FAA4BA1A428A3000C55898 /* NSArray+MMLog.h */,
+				99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */,
+				99FAA4BC1A428A3000C55898 /* NSArray+MMSorting.h */,
+				99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */,
 			);
 			path = MMAlgorithms;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99FAA4AD1A42708B00C55898 /* main.m in Sources */,
-				99FAA4B81A427D2000C55898 /* NSArray+MMLog.m in Sources */,
-				99FAA4B51A4278CC00C55898 /* NSArray+MMSorting.m in Sources */,
+				99FAA4BF1A428A3000C55898 /* NSArray+MMLog.m in Sources */,
+				99FAA4C01A428A3000C55898 /* NSArray+MMSorting.m in Sources */,
+				99FAA4BE1A428A3000C55898 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
