@@ -6,13 +6,13 @@ This repo is mainly for me to practice algorithms.
 ## Table of Content
 
 ### Sorting
-- Insertion Sort
+- Insertion sort
 
 ### Dynamic Programming
-- Fibonacci
+- Fibonacci number
 
 ### Recursive
-- Fibonacci
+- Fibonacci number
 
 
 
