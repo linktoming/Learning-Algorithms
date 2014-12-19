@@ -10,6 +10,8 @@
 		99FAA4BE1A428A3000C55898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4B91A428A3000C55898 /* main.m */; };
 		99FAA4BF1A428A3000C55898 /* NSArray+MMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */; };
 		99FAA4C01A428A3000C55898 /* NSArray+MMSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */; };
+		99FAA5071A43DF7100C55898 /* MMFibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5061A43DF7100C55898 /* MMFibonacci.m */; };
+		99FAA5111A43E13800C55898 /* MMAlgorithmsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5101A43E13800C55898 /* MMAlgorithmsTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,10 +33,22 @@
 		99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMLog.m"; sourceTree = SOURCE_ROOT; };
 		99FAA4BC1A428A3000C55898 /* NSArray+MMSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MMSorting.h"; sourceTree = SOURCE_ROOT; };
 		99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMSorting.m"; sourceTree = SOURCE_ROOT; };
+		99FAA5051A43DF7100C55898 /* MMFibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFibonacci.h; sourceTree = SOURCE_ROOT; };
+		99FAA5061A43DF7100C55898 /* MMFibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFibonacci.m; sourceTree = SOURCE_ROOT; };
+		99FAA50C1A43E13800C55898 /* MMAlgorithmsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMAlgorithmsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FAA50F1A43E13800C55898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99FAA5101A43E13800C55898 /* MMAlgorithmsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAlgorithmsTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		99FAA4A61A42708B00C55898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FAA5091A43E13800C55898 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				99FAA4AB1A42708B00C55898 /* MMAlgorithms */,
+				99FAA50D1A43E13800C55898 /* MMAlgorithmsTest */,
 				99FAA4AA1A42708B00C55898 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				99FAA4A91A42708B00C55898 /* MMAlgorithms */,
+				99FAA50C1A43E13800C55898 /* MMAlgorithmsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,13 +79,32 @@
 		99FAA4AB1A42708B00C55898 /* MMAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				99FAA4B91A428A3000C55898 /* main.m */,
 				99FAA4BA1A428A3000C55898 /* NSArray+MMLog.h */,
 				99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */,
 				99FAA4BC1A428A3000C55898 /* NSArray+MMSorting.h */,
 				99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */,
+				99FAA5051A43DF7100C55898 /* MMFibonacci.h */,
+				99FAA5061A43DF7100C55898 /* MMFibonacci.m */,
+				99FAA4B91A428A3000C55898 /* main.m */,
 			);
 			path = MMAlgorithms;
+			sourceTree = "<group>";
+		};
+		99FAA50D1A43E13800C55898 /* MMAlgorithmsTest */ = {
+			isa = PBXGroup;
+			children = (
+				99FAA5101A43E13800C55898 /* MMAlgorithmsTest.m */,
+				99FAA50E1A43E13800C55898 /* Supporting Files */,
+			);
+			path = MMAlgorithmsTest;
+			sourceTree = "<group>";
+		};
+		99FAA50E1A43E13800C55898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99FAA50F1A43E13800C55898 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +127,23 @@
 			productReference = 99FAA4A91A42708B00C55898 /* MMAlgorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		99FAA50B1A43E13800C55898 /* MMAlgorithmsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FAA5121A43E13800C55898 /* Build configuration list for PBXNativeTarget "MMAlgorithmsTest" */;
+			buildPhases = (
+				99FAA5081A43E13800C55898 /* Sources */,
+				99FAA5091A43E13800C55898 /* Frameworks */,
+				99FAA50A1A43E13800C55898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMAlgorithmsTest;
+			productName = MMAlgorithmsTest;
+			productReference = 99FAA50C1A43E13800C55898 /* MMAlgorithmsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +154,9 @@
 				ORGANIZATIONNAME = "Mingming Wang";
 				TargetAttributes = {
 					99FAA4A81A42708B00C55898 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					99FAA50B1A43E13800C55898 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
@@ -119,18 +174,38 @@
 			projectRoot = "";
 			targets = (
 				99FAA4A81A42708B00C55898 /* MMAlgorithms */,
+				99FAA50B1A43E13800C55898 /* MMAlgorithmsTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99FAA50A1A43E13800C55898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		99FAA4A51A42708B00C55898 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99FAA5071A43DF7100C55898 /* MMFibonacci.m in Sources */,
 				99FAA4BF1A428A3000C55898 /* NSArray+MMLog.m in Sources */,
 				99FAA4C01A428A3000C55898 /* NSArray+MMSorting.m in Sources */,
 				99FAA4BE1A428A3000C55898 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99FAA5081A43E13800C55898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99FAA5111A43E13800C55898 /* MMAlgorithmsTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +300,38 @@
 			};
 			name = Release;
 		};
+		99FAA5131A43E13800C55898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MMAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99FAA5141A43E13800C55898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MMAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -242,6 +349,14 @@
 			buildConfigurations = (
 				99FAA4B11A42708B00C55898 /* Debug */,
 				99FAA4B21A42708B00C55898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		99FAA5121A43E13800C55898 /* Build configuration list for PBXNativeTarget "MMAlgorithmsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FAA5131A43E13800C55898 /* Debug */,
+				99FAA5141A43E13800C55898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
