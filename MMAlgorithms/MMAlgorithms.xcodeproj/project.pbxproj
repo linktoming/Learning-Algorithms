@@ -11,7 +11,11 @@
 		99FAA4BF1A428A3000C55898 /* NSArray+MMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */; };
 		99FAA4C01A428A3000C55898 /* NSArray+MMSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */; };
 		99FAA5071A43DF7100C55898 /* MMFibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5061A43DF7100C55898 /* MMFibonacci.m */; };
-		99FAA5111A43E13800C55898 /* MMAlgorithmsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5101A43E13800C55898 /* MMAlgorithmsTest.m */; };
+		99FAA5111A43E13800C55898 /* MMSortingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5101A43E13800C55898 /* MMSortingTest.m */; };
+		99FAA5151A43E3A100C55898 /* MMFibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5061A43DF7100C55898 /* MMFibonacci.m */; };
+		99FAA5161A43E3A300C55898 /* NSArray+MMSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */; };
+		99FAA5171A43E3A600C55898 /* NSArray+MMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */; };
+		99FAA5191A43E4E600C55898 /* MMFibonacciTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5181A43E4E600C55898 /* MMFibonacciTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +41,8 @@
 		99FAA5061A43DF7100C55898 /* MMFibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFibonacci.m; sourceTree = SOURCE_ROOT; };
 		99FAA50C1A43E13800C55898 /* MMAlgorithmsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMAlgorithmsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FAA50F1A43E13800C55898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99FAA5101A43E13800C55898 /* MMAlgorithmsTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAlgorithmsTest.m; sourceTree = "<group>"; };
+		99FAA5101A43E13800C55898 /* MMSortingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSortingTest.m; sourceTree = "<group>"; };
+		99FAA5181A43E4E600C55898 /* MMFibonacciTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFibonacciTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +98,8 @@
 		99FAA50D1A43E13800C55898 /* MMAlgorithmsTest */ = {
 			isa = PBXGroup;
 			children = (
-				99FAA5101A43E13800C55898 /* MMAlgorithmsTest.m */,
+				99FAA5101A43E13800C55898 /* MMSortingTest.m */,
+				99FAA5181A43E4E600C55898 /* MMFibonacciTest.m */,
 				99FAA50E1A43E13800C55898 /* Supporting Files */,
 			);
 			path = MMAlgorithmsTest;
@@ -205,7 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99FAA5111A43E13800C55898 /* MMAlgorithmsTest.m in Sources */,
+				99FAA5151A43E3A100C55898 /* MMFibonacci.m in Sources */,
+				99FAA5171A43E3A600C55898 /* NSArray+MMLog.m in Sources */,
+				99FAA5191A43E4E600C55898 /* MMFibonacciTest.m in Sources */,
+				99FAA5161A43E3A300C55898 /* NSArray+MMSorting.m in Sources */,
+				99FAA5111A43E13800C55898 /* MMSortingTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
