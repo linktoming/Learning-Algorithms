@@ -10,7 +10,7 @@
 
 @implementation NSArray (MMSorting)
 
--(NSMutableArray *)mm_insertionSort{
+-(NSArray *)mm_insertionSort{
     
     NSMutableArray *result = [NSMutableArray arrayWithArray:self];
     
@@ -25,6 +25,6 @@
         }
     }
     
-    return result;
+    return [NSArray arrayWithArray:result];
 }
 @end

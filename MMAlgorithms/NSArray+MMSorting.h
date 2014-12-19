@@ -14,5 +14,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSArray (MMSorting)
--(NSMutableArray *)mm_insertionSort;
+-(NSArray *)mm_insertionSort;
 @end
