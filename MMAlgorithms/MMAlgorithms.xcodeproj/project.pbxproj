@@ -16,6 +16,9 @@
 		99FAA5161A43E3A300C55898 /* NSArray+MMSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */; };
 		99FAA5171A43E3A600C55898 /* NSArray+MMLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */; };
 		99FAA5191A43E4E600C55898 /* MMFibonacciTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 99FAA5181A43E4E600C55898 /* MMFibonacciTest.m */; };
+		9D6EEFA51A4FF87300282A41 /* NSArray+MMSearching.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6EEFA41A4FF87300282A41 /* NSArray+MMSearching.m */; };
+		9D6EEFA61A4FF87300282A41 /* NSArray+MMSearching.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6EEFA41A4FF87300282A41 /* NSArray+MMSearching.m */; };
+		9D6EEFA81A4FFBC400282A41 /* MMSearchingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6EEFA71A4FFBC400282A41 /* MMSearchingTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +46,9 @@
 		99FAA50F1A43E13800C55898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99FAA5101A43E13800C55898 /* MMSortingTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSortingTest.m; sourceTree = "<group>"; };
 		99FAA5181A43E4E600C55898 /* MMFibonacciTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFibonacciTest.m; sourceTree = "<group>"; };
+		9D6EEFA31A4FF87300282A41 /* NSArray+MMSearching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MMSearching.h"; sourceTree = SOURCE_ROOT; };
+		9D6EEFA41A4FF87300282A41 /* NSArray+MMSearching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MMSearching.m"; sourceTree = SOURCE_ROOT; };
+		9D6EEFA71A4FFBC400282A41 /* MMSearchingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSearchingTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,8 @@
 				99FAA4BB1A428A3000C55898 /* NSArray+MMLog.m */,
 				99FAA4BC1A428A3000C55898 /* NSArray+MMSorting.h */,
 				99FAA4BD1A428A3000C55898 /* NSArray+MMSorting.m */,
+				9D6EEFA31A4FF87300282A41 /* NSArray+MMSearching.h */,
+				9D6EEFA41A4FF87300282A41 /* NSArray+MMSearching.m */,
 				99FAA5051A43DF7100C55898 /* MMFibonacci.h */,
 				99FAA5061A43DF7100C55898 /* MMFibonacci.m */,
 				99FAA4B91A428A3000C55898 /* main.m */,
@@ -100,6 +108,7 @@
 			children = (
 				99FAA5101A43E13800C55898 /* MMSortingTest.m */,
 				99FAA5181A43E4E600C55898 /* MMFibonacciTest.m */,
+				9D6EEFA71A4FFBC400282A41 /* MMSearchingTest.m */,
 				99FAA50E1A43E13800C55898 /* Supporting Files */,
 			);
 			path = MMAlgorithmsTest;
@@ -200,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6EEFA51A4FF87300282A41 /* NSArray+MMSearching.m in Sources */,
 				99FAA5071A43DF7100C55898 /* MMFibonacci.m in Sources */,
 				99FAA4BF1A428A3000C55898 /* NSArray+MMLog.m in Sources */,
 				99FAA4C01A428A3000C55898 /* NSArray+MMSorting.m in Sources */,
@@ -212,7 +222,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				99FAA5151A43E3A100C55898 /* MMFibonacci.m in Sources */,
+				9D6EEFA61A4FF87300282A41 /* NSArray+MMSearching.m in Sources */,
 				99FAA5171A43E3A600C55898 /* NSArray+MMLog.m in Sources */,
+				9D6EEFA81A4FFBC400282A41 /* MMSearchingTest.m in Sources */,
 				99FAA5191A43E4E600C55898 /* MMFibonacciTest.m in Sources */,
 				99FAA5161A43E3A300C55898 /* NSArray+MMSorting.m in Sources */,
 				99FAA5111A43E13800C55898 /* MMSortingTest.m in Sources */,
@@ -361,6 +373,7 @@
 				99FAA4B21A42708B00C55898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99FAA5121A43E13800C55898 /* Build configuration list for PBXNativeTarget "MMAlgorithmsTest" */ = {
 			isa = XCConfigurationList;
@@ -369,6 +382,7 @@
 				99FAA5141A43E13800C55898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
