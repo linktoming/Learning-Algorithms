@@ -13,6 +13,7 @@
 ###Cloud IDE
 - <https://c9.io>
 - <https://koding.com>
+- <https://pro.nitrous.io/> (seems not supporting C)
 
 ###Interesting Books to Check in Compective Programming Contest
 - [Programming Challenges: The Programming Contest Training Manual](http://www.amazon.com/exec/obidos/ASIN/0387001638/ref=nosim/thealgorithmrepo/)
