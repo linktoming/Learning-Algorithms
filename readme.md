@@ -1,7 +1,7 @@
-MMAlgorithms
+Algorithms Learning
 ===================
 
-This repo is mainly for me to practice algorithms.
+This repo is for me to learn algorithms.
 
 ## Table of Content
 
