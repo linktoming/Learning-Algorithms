@@ -1,6 +1,9 @@
 /*
-Given a price table for rod with different length and the lengh of a rod, return the max value that can be get from cutting 
-the rod in pieces or no cutting at all if the price as a whole is the max. The cutting is free.
+Given a price table for rod with different length and the lengh of a rod, return 
+the max value that can be get from cutting the rod in pieces or no cutting at 
+all if the price as a whole is the max. The cutting is free. Optionally print 
+the actuall solution.
+
 Source: Introduction to Algorithms, 3e, Chapter 15.1
 */
 #include <stdio.h>
@@ -11,6 +14,8 @@ int cut_rod (int* p, int size_p, int rod_length);
 // Top-down with menoization DP
 int memoized_cut_rod(int *p, int size_p, int rod_length);
 int memoized_cut_rod_aux(int *p, int size_p, int rod_length, int *result);
+//TODO: Implement this as solution for Exercise 15.1-4
+int memoized_cut_rod_solution(int *p, int size_p, int rod_length, int *maxPrice, int *solution);
 // Bottom-up DP
 int bottom_up_cut_rod(int *p, int size_p, int rod_length);
 int bottom_up_cut_rod_with_solution(int *p, int size_p, int rod_length, int *maxPrice, int *solution);
@@ -127,6 +132,10 @@ int print_cut_rod_solution (int rod_length, int *solution){
         printf("The %dth cut is of length %d\n", j++, solution[i]);
         i -= solution[i];
     }    
+}
+int memoized_cut_rod_solution(int *p, int size_p, int rod_length, int *maxPrice, int *solution){
+    
+    //TODO: Excercise 15.1-4
 }
 int max(int num1, int num2) 
 {
