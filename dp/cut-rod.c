@@ -12,14 +12,15 @@ int cut_rod (int* p, int size_p, int rod_length);
 int memoized_cut_rod(int *p, int size_p, int rod_length);
 int memoized_cut_rod_aux(int *p, int size_p, int rod_length, int *result);
 // Bottom-up DP
-int bottom_up_cut_rod(int *p, int size_p, int rod_length)
+int bottom_up_cut_rod(int *p, int size_p, int rod_length);
 int max(int num1, int num2);
 
 int main() {
     
     int p[] = {1,5,8,9,10,17,17,20,24,30}; 
     for (int i = 1; i<11; i++){
-         printf("The result of %d is recursive: %d, memoized: %d, top down mp: %d\n", i, cut_rod(p, 10, i), memoized_cut_rod(p, 10, i),0);
+         printf("The result of %d is recursive: %d, memoized: %d, bottom up dp: %d \n", 
+         i, cut_rod(p, 10, i), memoized_cut_rod(p, 10, i),bottom_up_cut_rod(p,10,i));
     }
    
 }
@@ -70,14 +71,19 @@ int memoized_cut_rod_aux(int *p, int size_p, int rod_length, int *result){
 int bottom_up_cut_rod(int *p, int size_p, int rod_length){
     
     int *result = malloc ((rod_length+1) * sizeof (int));
-    result[0] = 1;
-    int maxP = -1;
+    result[0] = 0;
+    
     for (int i = 1; i < rod_length+1; i++) {
         
-        maxP = max(maxP, p[i-1]+result[i-1]);
-        
+        int maxP = -1;    
+        for (int j = 1; j <= i; j++){
+            maxP = max(maxP,p[j-1]+result[i-j]);    
+        }
+        result[i] = maxP;
     }
-    return maxP;
+    int r = result[rod_length];
+    free (result);
+    return r;
 }
 
 int max(int num1, int num2) 
