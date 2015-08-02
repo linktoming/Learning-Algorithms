@@ -13,16 +13,31 @@ int memoized_cut_rod(int *p, int size_p, int rod_length);
 int memoized_cut_rod_aux(int *p, int size_p, int rod_length, int *result);
 // Bottom-up DP
 int bottom_up_cut_rod(int *p, int size_p, int rod_length);
+int bottom_up_cut_rod_with_solution(int *p, int size_p, int rod_length, int *maxPrice, int *solution);
+int print_cut_rod_solution (int rod_length, int *solution); 
 int max(int num1, int num2);
 
 int main() {
     
     int p[] = {1,5,8,9,10,17,17,20,24,30}; 
+    
+    
     for (int i = 1; i<11; i++){
-         printf("The result of %d is recursive: %d, memoized: %d, bottom up dp: %d \n", 
-         i, cut_rod(p, 10, i), memoized_cut_rod(p, 10, i),bottom_up_cut_rod(p,10,i));
+        
+        int *value = malloc ((i+1)*sizeof(int));
+        int *solution = malloc ((i+1)*sizeof(int));
+    
+        printf("The result of %d is recursive: %d, memoized: %d, bottom up dp: %d and %d\n", 
+         i, cut_rod(p, 10, i), memoized_cut_rod(p, 10, i),bottom_up_cut_rod(p,10,i), 
+         bottom_up_cut_rod_with_solution(p, 10, i, value, solution));
+        
+        print_cut_rod_solution(i, solution);
+        
+        free (value);
+        free (solution);
     }
    
+    
 }
 
 int cut_rod (int* p, int size_p, int rod_length){
@@ -85,7 +100,34 @@ int bottom_up_cut_rod(int *p, int size_p, int rod_length){
     free (result);
     return r;
 }
+int bottom_up_cut_rod_with_solution(int *p, int size_p, int rod_length, int *maxPrice, int *solution){
+    
+    maxPrice[0] = 0;
+    for (int i = 1; i < rod_length + 1; i++) {
+        
+        int maxP = 0;
+        for (int j = 1; j <= i; j++) {
+            int currentP = p[j-1] + maxPrice[i-j];
+            if (currentP > maxP){
+                maxP = currentP;
+                maxPrice[i] = maxP;
+                solution[i] = j;    
+            }
+        }
+    }
+    
+    return maxPrice[rod_length];
+}
 
+int print_cut_rod_solution (int rod_length, int *solution){
+    
+    int j = 1;
+    for (int i = rod_length; i >0; ) {
+        
+        printf("The %dth cut is of length %d\n", j++, solution[i]);
+        i -= solution[i];
+    }    
+}
 int max(int num1, int num2) 
 {
   return num1 > num2 ? num1 : num2;
