@@ -8,6 +8,7 @@ Source: Introduction to Algorithms, 3e, Chapter 15.1
 */
 #include <stdio.h>
 #include <stdlib.h>
+#include "../common/common-numeric.h"
 
 // Default Recursive Solution Without DP
 int cut_rod (int* p, int size_p, int rod_length);
@@ -19,8 +20,7 @@ int memoized_cut_rod_solution(int *p, int size_p, int rod_length, int *maxPrice,
 // Bottom-up DP
 int bottom_up_cut_rod(int *p, int size_p, int rod_length);
 int bottom_up_cut_rod_with_solution(int *p, int size_p, int rod_length, int *maxPrice, int *solution);
-int print_cut_rod_solution (int rod_length, int *solution); 
-int max(int num1, int num2);
+void print_cut_rod_solution (int rod_length, int *solution); 
 
 int main() {
     
@@ -124,7 +124,7 @@ int bottom_up_cut_rod_with_solution(int *p, int size_p, int rod_length, int *max
     return maxPrice[rod_length];
 }
 
-int print_cut_rod_solution (int rod_length, int *solution){
+void print_cut_rod_solution (int rod_length, int *solution){
     
     int j = 1;
     for (int i = rod_length; i >0; ) {
@@ -136,9 +136,6 @@ int print_cut_rod_solution (int rod_length, int *solution){
 int memoized_cut_rod_solution(int *p, int size_p, int rod_length, int *maxPrice, int *solution){
     
     //TODO: Excercise 15.1-4
+    return 0;
 }
-int max(int num1, int num2) 
-{
-  return num1 > num2 ? num1 : num2;
-  
-}
+
